@@ -1,0 +1,117 @@
+/* 搜索 */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.clear_fix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.search-wrapper {
+  width: 10rem;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+.search {
+  height: 0.8rem;
+  padding: 0.18666667rem 0;
+  border: 0.02666667rem solid #eee;
+  text-align: center;
+}
+.cancel {
+  width: 1.6rem;
+  font-size: 0.37333333rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #434343;
+  float: right;
+}
+.input {
+  box-sizing: border-box;
+  position: relative;
+  margin-right: 1.6rem;
+  margin-left: 0.34666667rem;
+}
+.search-input {
+  width: 100%;
+  float: left;
+  height: 0.8rem;
+  border-radius: 1.17333333rem;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 0.37333333rem;
+  color: #434343;
+  box-sizing: border-box;
+  padding: 0.13333333rem 0 0.13333333rem 0.85333333rem;
+  outline: none;
+}
+.input .iconfont {
+  position: absolute;
+  height: 0.37333333rem;
+  width: 0.37333333rem;
+  top: 0.21333333rem;
+  left: 0.26666667rem;
+}
+.history-hotcity {
+  padding: 0.32rem 0.34666667rem 0.18666667rem;
+}
+.history {
+  width: 100%;
+}
+.history .iconfont {
+  float: right;
+  height: 0.45333333rem;
+  width: 0.45333333rem;
+  margin: 0.26666667rem;
+}
+.history .history-txt {
+  font-size: 0.42666667rem;
+  color: #434343;
+  height: 0.58666667rem;
+  line-height: 0.58666667rem;
+  margin: 0.26666667rem;
+  box-sizing: border-box;
+}
+.history-hotcity .city {
+  width: 100%;
+  overflow: hidden;
+}
+.history-hotcity .city li {
+  float: left;
+  font-size: 0.37333333rem;
+  height: 0.85333333rem;
+  line-height: 0.85333333rem;
+  width: 32%;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 1.17333333rem;
+  padding: 0 0.42666667rem;
+  margin: 0 0.05333333rem 0.32rem 0.05333333rem;
+}
+.hot-city .hot {
+  font-size: 0.42666667rem;
+  color: #434343;
+  height: 0.58666667rem;
+  line-height: 0.58666667rem;
+  margin: 0.26666667rem;
+  box-sizing: border-box;
+}
+.association {
+  box-sizing: border-box;
+  padding: 0.21333333rem;
+  display: none;
+}
+.association .txt {
+  border-bottom: 0.02666667rem #eee solid;
+  font-size: 0.37333333rem;
+  height: 0.37333333rem;
+  line-height: 0.37333333rem;
+  box-sizing: border-box;
+}

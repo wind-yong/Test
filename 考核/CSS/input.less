@@ -1,0 +1,129 @@
+/* 搜索 */
+@font:375/10rem;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    // font-size: (14/@font);
+  }
+  .clear_fix::after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
+}
+.search-wrapper{
+    width: (375/@font);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.search{
+    height: (30/@font);
+    padding: (7/@font) 0;
+    border: (1/@font) solid #eee;
+    text-align: center; 
+    
+}
+.cancel{
+    width: (60/@font);
+    font-size: (14/@font);
+    height: (30/@font);
+    line-height: (30/@font);
+    color: #434343;
+    float: right; 
+}
+.input{
+    box-sizing: border-box;
+    position: relative;
+    margin-right: (60/@font);
+    margin-left: (13/@font);
+}
+
+.search-input{
+    width: 100%;
+    float: left;
+    height: (30/@font);
+    border-radius: (44/@font);
+    border: none;
+    background-color: #f2f2f2;
+    font-size: (14/@font);
+    color: #434343;
+    box-sizing: border-box;
+    padding: (5/@font) 0  (5/@font) (32/@font);
+    // 去掉聚焦时的边框
+    outline: none;
+}
+.input .iconfont{
+    position: absolute;
+    height: (14/@font);
+    width: (14/@font);
+    top: (8/@font);
+    left: (10/@font);
+
+}
+// 历史记录和热门城市
+.history-hotcity{
+    padding: (12/@font) (13/@font) (7/@font);
+}
+// 历史记录
+.history{
+    width: 100%;
+}
+.history .iconfont{
+    float: right;
+    height: (17/@font);
+    width: (17/@font);
+    margin: (10/@font);
+
+}
+.history .history-txt{
+    font-size: (16/@font);
+    color: #434343;
+    height: (22/@font);
+    line-height: (22/@font);
+    margin: (10/@font);
+    box-sizing: border-box;
+}
+
+.history-hotcity .city{
+    width: 100%;
+    overflow: hidden;
+}
+.history-hotcity .city li{
+    float: left;
+    font-size: (14/@font);
+    height: (32/@font);
+    line-height: (32/@font);
+    width: 32%;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: (44/@font);
+    padding: 0 (16/@font);
+    // margin-bottom: (12/@font);
+    margin: 0 (2/@font) (12/@font) (2/@font);
+}
+.hot-city .hot{
+    font-size: (16/@font);
+    color: #434343;
+    height: (22/@font);
+    line-height: (22/@font);
+    margin: (10/@font);
+    box-sizing: border-box;
+}
+.association{
+    box-sizing: border-box;
+    padding: (8/@font);
+    display: none;
+    
+}
+.association .txt{
+    border-bottom: (1/@font) #eee solid;
+    font-size: (14/@font);
+    height: (14/@font);
+    line-height: (14/@font);
+    box-sizing: border-box;
+}

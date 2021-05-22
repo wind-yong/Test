@@ -1,0 +1,384 @@
+@font:375/10rem;
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.clear_fix::after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
+}
+.all-wrapper{
+    height: auto;
+    text-align: center;
+    background-color: #ccc;
+    position: relative;
+}
+//无滚轮
+.all-wrapper ::-webkit-scrollbar {
+    display: none;
+}
+.all-wrapper img{
+    width: 100vw;
+    height: (470/@font);
+}
+.wrapper{
+    width: 100vw;   
+    text-align: center;
+}
+
+.header{
+
+    z-index: 99;
+    width: 100%;
+    height: (46/@font); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header .iconfont{
+    font-size: (22/@font);
+    margin: 0 0.106667rem;
+    color: #fff;
+}
+
+.header .location ,.header i{
+    font-size: (16/@font);
+    color: #fff;
+    line-height: (16/@font);
+}
+/* 空气质量 */
+.airrate{
+    background-color: #a3d765;
+    border-radius: 0.213333rem; 
+    position: absolute;
+    top: 1.6rem;
+    left: 0.213333rem;
+    box-sizing: border-box;
+    padding: 0.213333rem 0.32rem;
+}
+.airrate .rate ,.airrate .ratehan{
+    font-size: (12/@font);
+    color: #fff;
+    line-height: 0.32rem;
+}
+.airrate .rate{
+    margin-bottom: (6/@font);
+
+}
+/* 天气状况 */
+.weather-condition{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    /* background-color: aquamarine; */
+    font-size: 0.586667rem;
+}
+/* 字体大小 */
+.weather-condition .temperature{
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    margin-top: 2.88rem;
+    margin-left: (20/@font);
+}
+.weather-condition .weather{
+    height: 0.586667rem;
+    font-size: 0.586667rem;
+    line-height: 0.586667rem;
+    margin-top: 0.213333rem;
+}
+.weather-condition .wind-level-and-hum{
+    font-size: 0.373333rem;
+    height: 0.373333rem;
+    line-height: 0.373333rem;
+    margin-top: 0.266667rem;
+}
+.weather-condition .wind{
+    font-size: 0.373333rem;
+    height: 0.373333rem;
+    line-height: 0.373333rem;
+    color: #fff;
+    width: 100%;
+}
+.weather-condition .decribe{
+    font-size: 0.426667rem;
+    line-height: 0.426667rem;
+    height: 0.426667rem;
+    margin: 1.333333rem 1.6rem 0;
+}
+
+/* 两天天气预报 */
+.today-wrapper{
+    position: absolute;
+    top: (470/@font);
+    left: 0;
+}
+.today-wrapper .item{
+    width: 50vw;
+    background-color: #fff;
+    color: #434343;
+    float: left;
+    border-bottom: (1/@font) #e4e4e4 solid;
+    padding-top: 0.693333rem;
+    padding-bottom: (40.41/@font);
+    font-size: 0.373333rem;
+    line-height: 0.373333rem;
+    margin-bottom: 0.266667rem;
+    box-sizing: border-box;
+}
+.today-wrapper .item .top{
+    margin-bottom: 0.586667rem;
+}
+.today-wrapper .item .top .data,.today-wrapper .item .bottom .today-weather{
+    float: left;
+}
+
+.today-wrapper .item .top .temperature-today,.today-wrapper .bottom .iconfont{
+    float: right;
+}
+.today-wrapper .item .top,.today-wrapper .bottom{
+    padding: 0  0.533333rem;
+}
+
+
+.today-wrapper .iconfont{
+    font-size: (22/@font);
+}
+/* 24h天气预报 */
+.hour{
+    border-bottom: (1/@font) #e4e4e4 solid;
+    padding-top: (30/@font);
+    padding-bottom: (25/@font);
+    margin-top: (103/@font);
+    margin-bottom: (10/@font);
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+}
+
+.one-day
+{
+    // width: 400%;
+    width: 400vw;
+}
+.hour-wea{
+    width: 100%;
+}
+.hour-wea li{
+    width: 3.84615%;
+    /* background-color: aquamarine; */
+    background-color: #fff;
+    float: left;
+    
+}
+.hour-wea .time{
+    
+    font-size: (12/@font);
+    line-height: (12/@font);
+    height: (12/@font);
+    color: #999;
+}
+.hour-wea .iconfont{
+    height: (24/@font);
+    width: (24/@font);
+    display: block;
+    margin: (15/@font) auto;
+    /* background-color: salmon; */
+    background-color: #fff;
+    font-size: (24/@font);
+}
+.hour-wea .tem{
+    /* background-color: seagreen; */
+    font-size: (14/@font);
+    color: #434343;
+    line-height: (14/@font);
+    height: (14/@font);
+}
+/* 7日天气 */
+.seven-day-wrapper{
+    /* background-color: #fafafb; */
+    background-color: #fff;
+    border-top: (1/@font) solid #e4e4e4;
+    border-bottom: (1/@font) solid #e4e4e4;
+    height: (391/@font);
+    padding-top: (25/@font);
+    margin-bottom: (10/@font);
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.seven-day{
+    width: (500/@font); 
+    box-sizing: border-box;
+}
+.seven-day li{
+    /* background-color: powderblue; */
+    background-color: #fff;
+    width: (62.5/@font);
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+/* 白天设置 */
+.seven-day .day{
+    font-size:(12/@font);
+    height: (12/@font);
+    line-height: (12/@font);
+    color: #b2b2b2;
+    box-sizing: border-box;
+
+}
+.seven-day .date{
+    font-size: (12/@font);
+    height: (12/@font);
+    line-height: (12/@font);
+    color: #b2b2b2;
+    margin: (5/@font) 0 (15/@font);
+    box-sizing: border-box;
+}
+/* 晚上设置 */
+.night-wea{
+    font-size: (14/@font);
+    line-height: (14/@font);
+    height: (14/@font);
+    color: #434343;
+    margin: (16/@font) 0 (20/@font);
+    box-sizing: border-box;
+
+}
+.seven-wea .wind, .seven-wea .wind-level{
+    font-size: (12/@font);
+    color: #b2b2b2;
+    line-height: (12/@font);
+    height: (12/@font);
+    box-sizing: border-box;
+    /* 把宽度设为定值，只显示一部分 */
+    width: (40/@font);
+    margin: 0 auto (6/@font);
+    overflow: hidden;
+}
+
+.seven-day .wea{
+    font-size: (14/@font);
+    line-height: (14/@font);
+    height: (14/@font);
+    box-sizing: border-box;
+    margin-bottom: (14/@font);
+}
+.seven-day .iconfont{
+    width: (24/@font);
+    height: (24/@font);
+    display: block;
+    margin: 0 auto;
+    font-size: (24/@font);
+}
+/* 图表 */
+#chart{
+    /* display: block; */
+    height:( 136/@font);
+    width: (500/@font);
+}
+
+/* 生活指数 */
+.life{
+    background-color: #b2b2b2;
+    width: 100vw;
+    // width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+
+}
+.life-sug{
+    width: 200vw;
+    // width: 200%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+
+}
+.living{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.living .life-item{
+    background-color: #fff;
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: (94/@font);
+    border-right:(1/@font) solid #e6e6e6;
+    border-bottom:(1/@font) solid #e6e6e6;
+    box-sizing: border-box;
+}
+.life-item .iconfont{
+    height: (24/@font);
+    width: (24/@font);
+    background-color: #fff;
+    margin: (15/@font) auto (10/@font);
+    font-size: (24/@font);
+}
+.life-item .sug{
+    font-size: (14/@font);
+    color: #434343;
+    line-height: (14/@font);
+    height: (14/@font);
+    margin-bottom: (6/@font);
+}
+.life-item .title{
+    color: #999;
+    font-size: (12/@font);
+    height: (12/@font);
+    line-height: (12/@font);
+}
+/* 轮播点 */
+.indicator{
+    width: 100%;
+    height: (17.6/@font);
+    background-color: #fff;
+    position: relative;
+}
+.indicator ul
+{
+    margin-top: (7.3/@font);
+    position: absolute;
+    left: 50%;
+    top: (0/@font);
+    transform: translateX(-50%);
+}
+.indicator li{
+    width: (10/@font);
+    height: (3/@font);
+    border-radius: (3/@font);
+    margin: 0 (5/@font);
+    background-color: #E3E3E3;
+    float: left;
+    box-sizing: border-box;
+}
+.indicator .active{
+    background-color: #CECECE;
+}
+/* 结尾 */
+.end{
+    background-color: #fff;
+    font-size: (12/@font);
+    padding: (15/@font) 0;
+    text-align: center;
+    color: #b2b2b2;
+}
+.end .txt{
+    margin-bottom: (5/@font);
+}
+

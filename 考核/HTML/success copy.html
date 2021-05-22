@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>success copy 使用new copy.css</title>
+    <link rel="stylesheet" href="../CSS/new copy.css">
+    <link rel="stylesheet" href="../CSS/input.css">
+    <link rel="stylesheet" href="../CSS/font.css">
+   
+</head>
+<body>
+    <div class="all-wrapper">
+        <img src="" alt="背景图">
+        <div class="wrapper">
+            <!-- 上部 -->
+            <div class="banner">
+                <!-- 图标 -->
+                  <div class="header">
+                    <i class="iconfont">&#xe641;</i>
+                    <p class="location">
+                        <i class="iconfont">&#xe637;</i>
+                    </p>
+                    <i class="iconfont">&#xe6bc;</i>
+                </div>
+            </div>
+        <!-- 天气情况 -->
+         <div class="weather-wrapper">
+            <div class="weather-condition"> 
+            </div>
+        </div>
+        <!-- 空气质量 -->
+        <div class="airrate ">
+        </div>
+        </div>
+        <!-- 两天天气预报 -->
+        <div class="today-wrapper clear_fix">
+            <div class="item">
+                <div class="top">
+                    <p class="data">今天</p>
+                </div>
+                <div class="bottom">
+                </div>
+            </div>
+            <div class="item">
+                <div class="top">
+                    <p class="data">明天</p>
+                </div>
+                <div class="bottom">
+                </div>
+            </div>
+        </div>
+        
+        <!-- 26h天气预报 -->
+        <div class="hour">
+            <div class="one-day">
+                <ul class="hour-wea">
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                    <li class="hour-item"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 7日天气 -->
+        <div class="seven-day-wrapper ">
+            <div class="seven-day">
+                <ul class="seven-wea clear_fix">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div id="chart"></div>
+                <ul class="seven-wea clear_fix">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+        </div>
+        
+    </div>
+
+
+        <!-- 生活指数 -->
+         <div class="life">
+            <div class="life-sug ">
+                <ul class="living"> 
+                    <li class="life-item" style="color: cornflowerblue;"></li>
+                    <li class="life-item" style="color: tomato;"></li>
+                    <li class="life-item" style="color: teal;"></li>
+                    <li class="life-item" style="color: green;"></li>
+                    <li class="life-item" style="color:tan;"></li>
+                    <li class="life-item" style="color: rgb(214, 179, 24);"></li>
+                    <li class="life-item" style="color: skyblue;"></li>
+                    <li class="life-item" style="color: violet;"></li>
+                </ul>
+                <ul class="living">
+                    <li class="life-item" style="color: cornflowerblue;"></li>
+                    <li class="life-item" style="color: tomato;"></li>
+                    <li class="life-item" style="color: teal;"></li>
+                    <li class="life-item" style="color: green;"></li>
+                    <li class="life-item" style="color:tan;"></li>
+                    <li class="life-item" style="color: rgb(214, 179, 24);"></li>
+                    <li class="life-item" style="color: skyblue;"></li>
+                    <li class="life-item" style="color: violet;"></li>
+                </ul>
+            </div>
+            <!-- 设置轮播点 -->
+            <div class="indicator">
+                <ul>
+                    <li class="active"></li>
+                    <li></li>
+                </ul>
+            </div> 
+           </div>
+            <!-- 结尾 -->
+        <div class="end">
+            <p class="txt">数据来源于中国天气网</p>
+            <p class="txt">Copyright © 1998 - 2021 Tencent. All Rights Reserved</p>
+        </div>
+        </div>
+       
+      <!-- 搜素 -->
+  <div class="search-wrapper" style="display: none;">
+    <div class="search">
+        <a href="#" class="cancel">取消</a>
+        <div class="input">
+            <i class="iconfont">&#xe688;</i>
+            <input type="text" class="search-input" placeholder="搜索地区">
+        </div>
+    </div>
+    <div class="history-hotcity">
+      <div class="history clear_fix">
+        <i class="iconfont">&#xe60f;</i>
+        <p class="history-txt">历史记录</p>
+          <ul class="city">
+              <li>重庆</li>
+              <li>成都</li>
+          </ul>
+      </div>
+      <div class="hot-city">
+          <p class="hot">热门城市</p>
+          <ul class="city">
+              <li>北京</li>
+              <li>上海</li>
+              <li>广州</li>
+              <li>西安</li>
+              <li>深圳</li>
+              <li>郑州</li>
+              <li>杭州</li>
+              <li>南京</li>
+              <li>武汉</li>
+              <li>成都</li>
+              <li>天津</li>
+              <li>沈阳</li>
+          </ul>
+      </div>
+    </div>
+</div>
+ <!-- 引入 echarts.js -->
+ <script src="./echarts.min.js"></script>
+ <!-- 引入封装的ajax -->
+ <script src="./myAjax.js"></script>
+<script src="./tengxunweather.js"></script>
+</body>
+</html>
